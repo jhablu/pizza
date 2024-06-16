@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website layout</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+
+       
+        nav ul{
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            gap: 3em;
+            font-size: 1.3rem;
+        }
+
+        
+        .navbar{
+            position: sticky;
+            top: 0;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 97px;
+            
+        }
+
+        
+        nav ul li a{
+            color: white;
+        }
+a:hover{
+    color: skyblue;
+}
+        body{
+            background: url(pizza.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+        }
+        
+    </style>
+</head>
+<body>
+  
+    <header>
+        <nav class="navbar">
+            <a href=""><img src="https://imgs.search.brave.com/_xe8PKmpyX1ggNIOfoYjQgCdjECUoqVO1zD5ug6giac/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pY29u/YXBlLmNvbS93cC1j/b250ZW50L3BuZ19s/b2dvX3ZlY3Rvci9k/b21pbm9zLXBpenph/LWxvZ28tMy5wbmc" height="70px"></a>
+            <ul class="lists">
+
+              
+                <li class="list"> <a href="#">Product</a></li>
+                <li class="list"> <a href="#">Testimonials</a></li>
+                <li class="list"> <a href="#">About us</a></li>
+                <li class="list"> <a href="#">Home</a></li>
+                <li class="list"> <a href="#">Contact us</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <style>
+        main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 120px 120px 120px 50px 120px 120px 120px 50px;
+        }
+       
+        .veg{
+            
+            grid-row: 2/5;
+            grid-column: 2/4;
+            background-color: aliceblue;
+            border: 1px solid;
+            box-shadow: 1px 1px 10px;
+            padding: 10px;
+            
+        }
+        .veg img{
+            width: 100%; /*background box me dalne ke liye*/
+        }
+       
+
+
+        .nonveg{
+            grid-row: 2/5;
+            grid-column: 5/7;
+            background-color: aliceblue;
+            border: 1px solid;
+            box-shadow: 1px 1px 10px;
+            padding: 10px;   
+        }
+
+        .nonveg img{
+            width: 100%;
+        }
+
+
+        .shakahari{
+            grid-row: 2/5;
+            grid-column: 8/10;
+            background-color: aliceblue;
+            border: 1px solid;
+            box-shadow: 1px 1px 10px;
+            padding: 10px; 
+        }
+
+        .shakahari img{
+            width: 100%;
+        }
+
+        .AllRounderPizza{
+            grid-row: 6/9;
+            grid-column: -10/-2;
+            border-radius: 10px;
+            background-color: aliceblue;
+            border: 1px solid;
+            box-shadow: 1px 1px 10px;
+            padding: 10px; 
+        }
+
+        .AllRounderPizza img{
+            width: 100%;
+            height: 25vh;
+            
+        }
+
+        .AllRounderPizza a {
+            color: black;
+            
+        }
+
+        
+
+        label{
+            color: aliceblue;
+            font-family: sans-serif;
+        }
+    </style>
+<main>
+    
+    <label for="site-search">search pizza :</label>
+    <div class="search">
+        <input type="search" placeholder="search">
+        
+    </div>
+    <br>
+
+
+    <div class="veg"> <img src="https://imgs.search.brave.com/Yp9DWt-SQv4MgsYW4A4iJ_Dm2WAdkNy_WZvjmpN3teY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA2LzIxLzEyLzE2/LzM2MF9GXzYyMTEy/MTYyMl83dVQ2bTJH/MTdlNThLYkRKbHRt/aUp5REtCSHZIZEM1/YS5qcGc" alt=""> <h3>Veg Pizza</h3>
+       <p> Delicious, cheesy, savory delight: pizza satisfies cravings, ignites taste buds.Thin crust or deep dish, toppings galore, pizza's universal allure.</p></div>
+
+    <div class=" nonveg"> <img src="https://imgs.search.brave.com/Yp9DWt-SQv4MgsYW4A4iJ_Dm2WAdkNy_WZvjmpN3teY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA2LzIxLzEyLzE2/LzM2MF9GXzYyMTEy/MTYyMl83dVQ2bTJH/MTdlNThLYkRKbHRt/aUp5REtCSHZIZEM1/YS5qcGc" alt=""> <h3>Non Veg Pizza</h3>
+        Delicious, cheesy, savory delight: pizza satisfies cravings, ignites taste buds.Thin crust or deep dish, toppings galore, pizza's universal allure</div>
+
+    <div class="shakahari"><img src="https://imgs.search.brave.com/Yp9DWt-SQv4MgsYW4A4iJ_Dm2WAdkNy_WZvjmpN3teY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA2LzIxLzEyLzE2/LzM2MF9GXzYyMTEy/MTYyMl83dVQ2bTJH/MTdlNThLYkRKbHRt/aUp5REtCSHZIZEM1/YS5qcGc" alt=""><h3>Shakahari Pizza</h3>
+        Delicious, cheesy, savory delight: pizza satisfies cravings, ignites taste buds.Thin crust or deep dish, toppings galore, pizza's universal allure</div>
+
+    <div class ="AllRounderPizza"><img src="https://imgs.search.brave.com/Yp9DWt-SQv4MgsYW4A4iJ_Dm2WAdkNy_WZvjmpN3teY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA2LzIxLzEyLzE2/LzM2MF9GXzYyMTEy/MTYyMl83dVQ2bTJH/MTdlNThLYkRKbHRt/aUp5REtCSHZIZEM1/YS5qcGc" alt=""> <a href="#"><h3>Shakahari Pizza</h3></a>
+        Delicious, cheesy, savory delight: pizza satisfies cravings, ignites taste buds.Thin crust or deep dish, toppings galore, pizza's universal allure A pizza, a culinary masterpiece, embodies a symphony of flavors atop a doughy canvas. A medley of molten cheese, tangy tomato sauce, and an array of toppings dance
+        e.</div>
+    
+</main>
+</body>
+</html>
